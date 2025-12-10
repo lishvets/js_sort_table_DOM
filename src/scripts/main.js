@@ -10,7 +10,7 @@ heads.forEach((th, index) => {
 });
 
 function sortByColumn(columnIndex) {
-  const rows = Array.from(tbody.querySelector('tr'));
+  const rows = Array.from(tbody.querySelectorAll('tr'));
 
   const prepared = rows.map((row) => {
     const cellText = row.children[columnIndex].textContent.trim();
